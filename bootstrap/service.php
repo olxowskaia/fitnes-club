@@ -16,6 +16,7 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
 
 
 
+
 ?>
 
 
@@ -44,9 +45,9 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
                             <div class="card" style="width: 18rem;">
                                <img src="img/trainer1.jpg" class="card-img-top" alt="trainer">
                                 <div class="card-body">
-                                <h5 class="card-title"><b><?php
-
-                                    $sql = "SELECT Name FROM service";
+                                <h5 class="card-title"><b>
+                                    <?php
+                                        $sql = "SELECT Name FROM club WHERE id = 1";
                                     $massive=mysqli_query($connection,$sql);
                                     $data=mysqli_fetch_assoc($massive);
                                     foreach ($data as $key => $value)
@@ -55,8 +56,7 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
                                     }
                                     ?></b></h5>
                                 <p class="card-text"><?php
-
-                                    $sql = "SELECT description FROM service";
+                                        $sql = "SELECT discription FROM club WHERE id = 1";
                                     $massive=mysqli_query($connection,$sql);
                                     $data=mysqli_fetch_assoc($massive);
                                     foreach ($data as $key => $value)
@@ -65,8 +65,7 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
                                     }
                                     ?></p>
                                 <h6 class="card-title"><b><?php
-
-                                    $sql = "SELECT cost FROM service";
+                                        $sql = "SELECT cost FROM club WHERE id = 1";
                                     $massive=mysqli_query($connection,$sql);
                                     $data=mysqli_fetch_assoc($massive);
                                     foreach ($data as $key => $value)
@@ -82,9 +81,33 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
                             <div class="card" style="width: 18rem;">
                                <img src="img/basik.jpg" class="card-img-top" alt="basik">
                                 <div class="card-body">
-                                <h5 class="card-title"><b>Посещение бассейна.</b></h5>
-                                <p class="card-text">Бассейн для всей семьи. Вы также можете воспользоваться услугами персонального тренера в аквазоне.</p>
-                                <h6 class="card-title">Стоимость посещения (2 часа): <br><b>300 р.</b></h6>
+                                <h5 class="card-title"><b><?php
+                                        $sql = "SELECT Name FROM club WHERE id = 2";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h5>
+                                <p class="card-text"><?php
+                                        $sql = "SELECT discription FROM club WHERE id = 2";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></p>
+                                <h6 class="card-title"><b><?php
+                                        $sql = "SELECT cost FROM club WHERE id = 2";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h6>
                                 </div>
                             </div>
                         </div>
@@ -93,9 +116,33 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
                             <div class="card" style="width: 18rem;">
                                 <img src="img/massazh.jpg" class="card-img-top" alt="massazh">
                                 <div class="card-body">
-                                    <h5 class="card-title"><b>Массаж.</b></h5>
-                                    <p class="card-text">После утомительной тренировки, Вы можете воспользоваться услугой массажа: спортивный, аппаратный, лечебный, общий, детский.</p>
-                                    <h6 class="card-title">Стоимость процедуры (1 час): <br><b>450 р.</b></h6>
+                                    <h5 class="card-title"><b><?php
+                                        $sql = "SELECT Name FROM club WHERE id = 3";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h5>
+                                    <p class="card-text"><?php
+                                        $sql = "SELECT discription FROM club WHERE id = 3";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></p>
+                                    <h6 class="card-title"><b><?php
+                                        $sql = "SELECT cost FROM club WHERE id = 3";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h6>
                                 </div>
                             </div>
                         </div>
@@ -112,9 +159,33 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
                             <div class="card" style="width: 18rem;">
                                <img src="img/airobika.jpg" class="card-img-top" alt="airobika">
                                 <div class="card-body">
-                                <h5 class="card-title"><b>Аэробика.</b></h5>
-                                <p class="card-text">Групповые занятия аэробикой для женщин всех возрастов.Комплекс занятий по аэробики позволит Вам сохранить вашу фигуру и здоровье в тонусе.</p>
-                                <h6 class="card-title">Стоимость тренировки (1,5 час): <br><b>350 р.</b></h6>
+                                <h5 class="card-title"><b><?php
+                                        $sql = "SELECT Name FROM club WHERE id = 4";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h5>
+                                <p class="card-text"><?php
+                                        $sql = "SELECT discription FROM club WHERE id = 4";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></p>
+                                <h6 class="card-title"><b><?php
+                                        $sql = "SELECT cost FROM club WHERE id = 4";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h6>
                                 </div>
                             </div>
                         </div>
@@ -123,9 +194,33 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
                             <div class="card" style="width: 18rem;">
                                 <img src="img/sert.jpg" class="card-img-top" alt="sertifikat">
                                 <div class="card-body">
-                                    <h5 class="card-title"><b>Подарочный сертификат.</b></h5>
-                                    <p class="card-text">Наш сертификат станет лучшим подарком на любой праздник для Ваших близких людей.</p>
-                                    <h6 class="card-title">Цена сертификата : <br><b>500-5000 р.</b></h6>
+                                    <h5 class="card-title"><b><?php
+                                        $sql = "SELECT Name FROM club WHERE id = 5";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h5>
+                                    <p class="card-text"><?php
+                                        $sql = "SELECT discription FROM club WHERE id = 5";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></p>
+                                    <h6 class="card-title"><?php
+                                        $sql = "SELECT cost FROM club WHERE id = 5";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?><br><b>500-5000 р.</b></h6>
                                 </div>
                             </div>
                         </div>
@@ -134,9 +229,33 @@ $connection=mysqli_connect('localhost', 'root', '', 'fitnes-club');
                             <div class="card" style="width: 18rem;">
                                 <img src="img/pitanie.jpg" class="card-img-top" alt="pitanie">
                                 <div class="card-body">
-                                    <h5 class="card-title"><b>Спортивное питание.</b></h5>
-                                    <p class="card-text">Также в нашем Фитнес-клубе есть возможность приобрести спортивное питание. У нас огромный ассортимент и постоянные акции для наших посетителей.</p>
-                                    <h6 class="card-title">Цена : <br><b>300-2000 р.</b></h6>
+                                    <h5 class="card-title"><b><?php
+                                        $sql = "SELECT Name FROM club WHERE id = 6";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h5>
+                                    <p class="card-text"><?php
+                                        $sql = "SELECT discription FROM club WHERE id = 6";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></p>
+                                    <h6 class="card-title"><b><?php
+                                        $sql = "SELECT cost FROM club WHERE id = 6";
+                                    $massive=mysqli_query($connection,$sql);
+                                    $data=mysqli_fetch_assoc($massive);
+                                    foreach ($data as $key => $value)
+                                    {
+                                    print_r($value);
+                                    }
+                                    ?></b></h6>
                                 </div>
                             </div>
                         </div>
