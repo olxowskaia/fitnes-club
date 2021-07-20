@@ -1,0 +1,87 @@
+body {
+    background: url("../img/aaaaaaaaaaa.jpg") center
+no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+
+
+    font-family: Tahoma;
+    line-height: 1.5;
+    font-size: 18px;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 45px;
+    color: wheat;
+}
+p {
+    color: navajowhite;
+}
+h2 {
+    font-family: Tahoma;
+    font-size: 30;
+    color: navajowhite;
+
+}
+li {
+    color: navajowhite;
+}
+
+u {
+    color: navajowhite;
+}
+
+p1 {
+    color: navajowhite;
+}
+
+p2 {
+    color: navajowhite;
+}
+
+
+
+p4{
+    color: black;
+}
+
+.card {
+    text-align: left;
+}
+.container {
+    text-align: left;
+    background: none;
+}
+p3{
+    color: black;
+}
+.title{
+    color: black;
+}
+
+.button {
+text-align: center;
+margin-top: 40px;
+}
+.description {
+font-size: 35px;
+font-family:inherit;
+color: black;
+background: none;
+}
+
+.description:hover {
+color:#332e2e;
+text-decoration: none;
+}
+.home {
+font-size: 35px;
+font-family:inherit;
+color: #d6a6a6;
+background: none;
+text-decoration: none;
+}
+
+

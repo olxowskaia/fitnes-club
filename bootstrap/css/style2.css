@@ -1,0 +1,66 @@
+body {
+    background: url("../img/aaaaaaaaaaa.jpg") center
+no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+
+
+    font-family: Tahoma;
+    line-height: 1.5;
+    font-size: 18px;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 45px;
+    color: wheat;
+}
+.home {
+font-size: 35px;
+font-family:inherit;
+color: #d6a6a6;
+background: none;
+text-decoration: none;
+}
+h3{
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 100px;
+}
+.container {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+text-align:center;
+}
+.catalog {
+font-size: 30px;
+text-align: center;
+font-family: "Century Gothic";
+line-height: 45px;
+margin-top: 100px;
+}
+.kont {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.telephone {
+width: 100%;
+text-align: right;
+top: 0;
+right: 0;
+color: #d6a6a6;
+}
+
+.spisok {
+color: white;
+display: inline-block;
+vertical-align: top;
+margin: 0 3px;
+}
+
